@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace User_Collection_IList_Generic_Serializable
 {
     [Serializable]
-    public class Student : Person
+    public sealed class Student : Person
     {
         public int classroom;
         public int personalId;

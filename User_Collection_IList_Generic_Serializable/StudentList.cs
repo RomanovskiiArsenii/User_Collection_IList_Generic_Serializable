@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace User_Collection_IList_Generic_Serializable
 {
     [Serializable]
-    public class StudentList : PersonsList<Person>
+    public sealed class StudentList : PersonsList<Person>
     {
         private int currentList;
         private static int numOfLists;
