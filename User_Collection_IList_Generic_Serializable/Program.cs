@@ -22,9 +22,6 @@ namespace User_Collection_IList_Generic_Serializable
             StudentList students2 = new StudentList(studentList);
             StudentList students3 = new StudentList() { student1, student2, student3 };
 
-            Person per = student3;
-            Console.WriteLine(per.ToString());
-
             //test of ToString()
             Console.WriteLine("\ttest of ToString()");
             Console.WriteLine(students1.ToString());

@@ -12,7 +12,7 @@ namespace User_Collection_IList_Generic_Serializable
     public abstract class Person
     {
         private int age = 0;
-        private string name;
+        private string name = string.Empty;
         public int Age { get { return age; } set { age = value; } }
         public string Name { get { return name; } set { name = value; } }
         public Person() { }
