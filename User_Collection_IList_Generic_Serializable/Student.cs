@@ -9,8 +9,10 @@ namespace User_Collection_IList_Generic_Serializable
     [Serializable]
     public class Student : Person
     {
-        public int Classroom { get; set; } = 0;
-        public int PersonalId { get; set; } = 0;
+        public int classroom = 0;
+        public int personalId = 0;
+        public int Classroom { get {return classroom;} set { classroom = value;} }
+        public int PersonalId { get { return personalId; } set { personalId = value;} }
         public Student() { }
         public Student(int age, string name, int classroom, int personalId) : base(age, name)
         {

@@ -11,13 +11,15 @@ namespace User_Collection_IList_Generic_Serializable
     [XmlInclude(typeof(Student))]
     public abstract class Person
     {
-        public int Age { get; set; } = 0;
-        public string Name { get; set; } = string.Empty;
+        private int age = 0;
+        private string name;
+        public int Age { get { return age; } set { age = value; } }
+        public string Name { get { return name; } set { name = value; } }
         public Person() { }
         public Person(int age, string name)
         {
-            Age = age;
-            Name = name;
+            this.age = age;
+            this.name = name;
         }
         public override string ToString()
         {
