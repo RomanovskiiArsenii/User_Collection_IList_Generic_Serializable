@@ -10,7 +10,7 @@ namespace User_Collection_IList_Generic_Serializable
     [Serializable]
     public abstract class PersonsList<T> : IList<T> where T : Person
     {
-        public List<T> personsList;
+        protected List<T> personsList;
         public PersonsList() { personsList = new List<T>(); }
         public PersonsList(IEnumerable<T> collection) : this()
         {
