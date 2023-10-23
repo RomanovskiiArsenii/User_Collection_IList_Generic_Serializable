@@ -9,8 +9,8 @@ namespace User_Collection_IList_Generic_Serializable
     [Serializable]
     public sealed class Student : Person
     {
-        public int classroom;
-        public int personalId;
+        private int classroom;
+        private int personalId;
         public int Classroom { get { return classroom; } set { classroom = value; } }
         public int PersonalId { get { return personalId; } set { personalId = value; } }
         public Student()
